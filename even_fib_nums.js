@@ -7,23 +7,19 @@
  */
 function _sumFibs(maxFibValue) {
 
-
-
   var x = 0;
   var y = 1;
   var sum = 0;
   var z;
 
-  for (i = 1; i < 4000000; i++) {
+  for (i = 1; y < maxFibValue; i++) {
     z = y + x;
     x = y;
     y = z;
-    if (y % 2 === 0 && y <= maxFibValue) {
+    if (y % 2 === 0 ) {
       sum += y;
     }
   }
-
-
   return sum;
 }
 
@@ -38,7 +34,7 @@ function _highestFibonacciNumber(maxFibValue) {
     x = y;
     y = z;
     if (y <= maxFibValue) {
-      highest=y
+      highest = y
     }
   }
 
@@ -46,7 +42,7 @@ function _highestFibonacciNumber(maxFibValue) {
 
 };
 _highestFibonacciNumber(13);
-  console.log(_highestFibonacciNumber(13));
+console.log(_highestFibonacciNumber(13));
 
 /**
  * Do not modify code below.
